@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(2, 37, 51) !important;
+    
+}
+
+.text {
+    color: silver;
+}
+
+
+.card, .card-body, .card-header , .card-text {
+    background-color: transparent !important;
+    border: none !important;
+    color: silver;
+}
+
+.testo {
+    color: red;
+}
