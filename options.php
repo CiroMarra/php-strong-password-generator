@@ -9,13 +9,19 @@
         return $password;
     }
 
+    
+
   
-    function text( $text ){
+    function text($text) {
+        $password = '';
         if(isset($text)) {
             $password_length = $text;
-            return generate_Password($password_length);
-
+            $password = generate_Password($password_length);
         }
+        return $password;
+    }
+
+    $password_length = isset($_POST['length']) ? $_POST['length'] : '';
+    $password = text($password_length);
 
         
-    }

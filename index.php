@@ -21,9 +21,8 @@
                         <input type="submit" value="Genera Password" class="btn btn-primary">
                     </form>
                     <?php
-                        $password = text($_POST['length']);
-                        echo "<h3 class='testo'>Password Generata:</h3>";
-                        echo "<p class='testo'>$password</p>";
+                       echo "<h3 class='testo'>Password Generata:</h3>";
+                       echo "<p class='testo'>$password</p>";
                     ?>
             </div>
         </div>
