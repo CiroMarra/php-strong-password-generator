@@ -1,4 +1,7 @@
 <?php
+    $password_length = isset($_POST['length']) ? intval($_POST['length']) : '';
+    $password = text($password_length);
+    
     function generate_Password($length) {
         $text = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*';
         $text_length = strlen($text);
@@ -9,9 +12,7 @@
         return $password;
     }
 
-    
 
-  
     function text($text) {
         $password = '';
         if(isset($text)) {
@@ -21,7 +22,5 @@
         return $password;
     }
 
-    $password_length = isset($_POST['length']) ? $_POST['length'] : '';
-    $password = text($password_length);
 
         
